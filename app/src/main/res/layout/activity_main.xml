@@ -15,7 +15,9 @@
         android:text="@string/btn_new_game"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="StartGame"
+        android:nestedScrollingEnabled="false"/>
 
     <TextView
         android:layout_width="wrap_content"
