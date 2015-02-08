@@ -4,16 +4,28 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.GridLayout;
+import android.widget.TextView;
 
 
 public class GameActivity extends ActionBarActivity
 {
 
+    private GameBoard game;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        game = new GameBoard();
+        //TextView text = (TextView)findViewById(R.id.textView2);
+
+    }
+
+    public int GetGameBoardSquareColor(View view)
+    {
+        return game.GetGameBoardSquare(0,0).GetColor();
     }
 
 
